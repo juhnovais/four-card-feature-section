@@ -1,0 +1,126 @@
+// ## Colors
+// ### Primary
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// ### Neutral
+
+$veryDarkBlue: hsl(234, 12%, 34%);
+$grayishBlue: hsl(229, 6%, 66%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: $veryLightGray;
+    margin: 70px 30px;
+
+    main {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    p {
+        color: $veryDarkBlue;
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    header {
+        text-align: center;
+        max-width: 540px;
+        margin: 0 auto;
+
+        .subheader {
+            font-weight: 200;
+            font-size: 1.6rem;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin: 0 0 20px 0;
+
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-flow: row;
+        gap: 20px;
+        margin-top: 70px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1190px;
+
+        @media only screen and (min-width: 1190px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            text-align: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 6px;
+            border-top-width: 4px;
+            border-top-style: solid;
+            padding: 30px 17px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: flex-start;
+            box-shadow: 0px 6px 10px hsla(229, 6%, 66%, 25%);
+            max-width: 320px;
+            text-align: left;
+
+            @media only screen and (min-width: 1190px) {
+                max-width: 320px;
+            }
+
+
+            h2 {
+                margin: 0;
+            }
+
+            img {
+                margin-left: auto;
+                margin-top: 18px;
+            }
+
+            &.supervisor {
+                border-top-color: $cyan;
+
+                @media only screen and (min-width: 1190px) {
+                    grid-row: 1 / span 2;
+                    grid-column: 1;
+                }
+
+            }
+
+            &.teamBuilder {
+                border-top-color: $red;
+            }
+
+            &.karma {
+                border-top-color: $orange;
+            }
+
+            &.calculator {
+                border-top-color: $blue;
+
+                @media only screen and (min-width: 1190px) {
+                    grid-row: 1 / span 2;
+                    grid-column: 3;
+                }
+            }
+        }
+    }
+}
