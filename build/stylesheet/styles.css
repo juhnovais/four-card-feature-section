@@ -39,7 +39,7 @@ body .cards {
   align-items: center;
   max-width: 1190px;
 }
-@media only screen and (min-width: 1190px) {
+@media only screen and (min-width: 1170px) {
   body .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -62,7 +62,7 @@ body .cards .card {
   max-width: 320px;
   text-align: left;
 }
-@media only screen and (min-width: 1190px) {
+@media only screen and (min-width: 1170px) {
   body .cards .card {
     max-width: 320px;
   }
@@ -77,7 +77,7 @@ body .cards .card img {
 body .cards .card.supervisor {
   border-top-color: hsl(180, 62%, 55%);
 }
-@media only screen and (min-width: 1190px) {
+@media only screen and (min-width: 1170px) {
   body .cards .card.supervisor {
     grid-row: 1/span 2;
     grid-column: 1;
@@ -92,7 +92,7 @@ body .cards .card.karma {
 body .cards .card.calculator {
   border-top-color: hsl(212, 86%, 64%);
 }
-@media only screen and (min-width: 1190px) {
+@media only screen and (min-width: 1170px) {
   body .cards .card.calculator {
     grid-row: 1/span 2;
     grid-column: 3;
