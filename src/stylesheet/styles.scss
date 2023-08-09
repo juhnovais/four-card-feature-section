@@ -40,12 +40,18 @@ body {
         .subheader {
             font-weight: 200;
             font-size: 1.6rem;
+            @media only screen and (min-width: 1170px) {
+                font-size: 2.3rem;
+            }
         }
 
         h1 {
             font-size: 1.6rem;
             margin: 0 0 20px 0;
             color: $veryDarkBlue;
+            @media only screen and (min-width: 1170px) {
+                font-size: 2.3rem;
+            }
 
         }
     }
@@ -90,6 +96,7 @@ body {
             h2 {
                 margin: 0;
                 color: $veryDarkBlue;
+                font-size: 1.3rem;
             }
 
             img {

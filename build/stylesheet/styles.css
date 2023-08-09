@@ -25,10 +25,20 @@ body header .subheader {
   font-weight: 200;
   font-size: 1.6rem;
 }
+@media only screen and (min-width: 1170px) {
+  body header .subheader {
+    font-size: 2.3rem;
+  }
+}
 body header h1 {
   font-size: 1.6rem;
   margin: 0 0 20px 0;
   color: hsl(234, 12%, 34%);
+}
+@media only screen and (min-width: 1170px) {
+  body header h1 {
+    font-size: 2.3rem;
+  }
 }
 body .cards {
   display: flex;
@@ -71,6 +81,7 @@ body .cards .card {
 body .cards .card h2 {
   margin: 0;
   color: hsl(234, 12%, 34%);
+  font-size: 1.3rem;
 }
 body .cards .card img {
   margin-left: auto;
