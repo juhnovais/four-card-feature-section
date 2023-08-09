@@ -28,6 +28,7 @@ body header .subheader {
 body header h1 {
   font-size: 1.6rem;
   margin: 0 0 20px 0;
+  color: hsl(234, 12%, 34%);
 }
 body .cards {
   display: flex;
@@ -69,6 +70,7 @@ body .cards .card {
 }
 body .cards .card h2 {
   margin: 0;
+  color: hsl(234, 12%, 34%);
 }
 body .cards .card img {
   margin-left: auto;
